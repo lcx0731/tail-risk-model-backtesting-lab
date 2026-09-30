@@ -1,0 +1,131 @@
+{
+  "design": {
+    "source": "deterministic synthetic unit-variance Gaussian and Student-t losses",
+    "seed": 20260930,
+    "n_replicates_per_scenario": 250,
+    "n_calibration": 2000,
+    "n_test": 5000,
+    "confidence": 0.99,
+    "scenarios": [
+      "gaussian",
+      "student_t_10",
+      "student_t_5",
+      "student_t_3"
+    ],
+    "methods": [
+      "gaussian",
+      "historical",
+      "evt_pot"
+    ]
+  },
+  "results": [
+    {
+      "scenario": "gaussian",
+      "method": "gaussian",
+      "var_relative_bias": -0.0009539918917216137,
+      "es_relative_bias": -0.0008320335455606274,
+      "mean_exceedance_rate": 0.010099999999999998,
+      "kupiec_rejection_rate": 0.176,
+      "mean_pinball_loss": 0.026703104568576257
+    },
+    {
+      "scenario": "gaussian",
+      "method": "historical",
+      "var_relative_bias": 2.1911458644048752e-05,
+      "es_relative_bias": -0.00785016785911439,
+      "mean_exceedance_rate": 0.010224,
+      "kupiec_rejection_rate": 0.336,
+      "mean_pinball_loss": 0.026787193548025848
+    },
+    {
+      "scenario": "gaussian",
+      "method": "evt_pot",
+      "var_relative_bias": 0.0012485844499849602,
+      "es_relative_bias": -0.005880932091389327,
+      "mean_exceedance_rate": 0.0100368,
+      "kupiec_rejection_rate": 0.26,
+      "mean_pinball_loss": 0.026740671304328646
+    },
+    {
+      "scenario": "student_t_10",
+      "method": "gaussian",
+      "var_relative_bias": -0.06064244494257543,
+      "es_relative_bias": -0.11566389662442784,
+      "mean_exceedance_rate": 0.0133536,
+      "kupiec_rejection_rate": 0.58,
+      "mean_pinball_loss": 0.030417892163361333
+    },
+    {
+      "scenario": "student_t_10",
+      "method": "historical",
+      "var_relative_bias": 0.0017261469297266956,
+      "es_relative_bias": -0.0077445725363089885,
+      "mean_exceedance_rate": 0.0101544,
+      "kupiec_rejection_rate": 0.284,
+      "mean_pinball_loss": 0.030289006630590365
+    },
+    {
+      "scenario": "student_t_10",
+      "method": "evt_pot",
+      "var_relative_bias": 0.003172772475979344,
+      "es_relative_bias": -0.007025873493735373,
+      "mean_exceedance_rate": 0.009991199999999999,
+      "kupiec_rejection_rate": 0.216,
+      "mean_pinball_loss": 0.0302460529002636
+    },
+    {
+      "scenario": "student_t_5",
+      "method": "gaussian",
+      "var_relative_bias": -0.105086075612478,
+      "es_relative_bias": -0.22513220839735015,
+      "mean_exceedance_rate": 0.014715999999999998,
+      "kupiec_rejection_rate": 0.808,
+      "mean_pinball_loss": 0.034915005179747965
+    },
+    {
+      "scenario": "student_t_5",
+      "method": "historical",
+      "var_relative_bias": 0.010860559590400849,
+      "es_relative_bias": -0.002974720889835935,
+      "mean_exceedance_rate": 0.009837599999999998,
+      "kupiec_rejection_rate": 0.252,
+      "mean_pinball_loss": 0.03446386852021
+    },
+    {
+      "scenario": "student_t_5",
+      "method": "evt_pot",
+      "var_relative_bias": 0.009189605271255445,
+      "es_relative_bias": -0.004568358679188766,
+      "mean_exceedance_rate": 0.0097808,
+      "kupiec_rejection_rate": 0.188,
+      "mean_pinball_loss": 0.03440429969560651
+    },
+    {
+      "scenario": "student_t_3",
+      "method": "gaussian",
+      "var_relative_bias": -0.1254458020115075,
+      "es_relative_bias": -0.350336206921087,
+      "mean_exceedance_rate": 0.0147216,
+      "kupiec_rejection_rate": 0.76,
+      "mean_pinball_loss": 0.04135570601470125
+    },
+    {
+      "scenario": "student_t_3",
+      "method": "historical",
+      "var_relative_bias": 0.006029285004983325,
+      "es_relative_bias": -0.018190306755301273,
+      "mean_exceedance_rate": 0.0101944,
+      "kupiec_rejection_rate": 0.296,
+      "mean_pinball_loss": 0.04067872184835223
+    },
+    {
+      "scenario": "student_t_3",
+      "method": "evt_pot",
+      "var_relative_bias": 0.0041970586377149,
+      "es_relative_bias": -0.021764266007705105,
+      "mean_exceedance_rate": 0.010120800000000001,
+      "kupiec_rejection_rate": 0.228,
+      "mean_pinball_loss": 0.040581184096877325
+    }
+  ]
+}
